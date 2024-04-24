@@ -1,6 +1,7 @@
 import About from "./components/About"
 import Avatar from "./components/Avatar"
 import Navbar from "./components/Navbar"
+import Technologies from "./components/Technologies"
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Navbar />
       <Avatar />
       <About />
+      <Technologies />
       </div>
     </div>
   )
