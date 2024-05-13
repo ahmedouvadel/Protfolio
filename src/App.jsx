@@ -1,6 +1,8 @@
 import About from "./components/About"
 import Avatar from "./components/Avatar"
+import Experience from "./components/Experience"
 import Navbar from "./components/Navbar"
+import Projects from "./components/Projects"
 import Technologies from "./components/Technologies"
 
 const App = () => {
@@ -19,6 +21,8 @@ const App = () => {
       <Avatar />
       <About />
       <Technologies />
+      <Experience />
+      <Projects />
       </div>
     </div>
   )
