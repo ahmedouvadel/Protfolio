@@ -1,5 +1,5 @@
 import project1 from "../img/project1.jpg";
-import project2 from "../img/project2.png";
+import project2 from "../img/dash.png";
 import project3 from "../img/protfolio.png";
 import project4 from "../img/project4.png";
 import project5 from "../img/android.png";
@@ -98,7 +98,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Sousse, Sahloul",
+  address: "Arafat, Nkc",
   phoneNo: "00216 54769409 ",
   email: "ahmedvadel94@gmail.com",
 };

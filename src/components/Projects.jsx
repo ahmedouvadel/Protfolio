@@ -22,7 +22,7 @@ const Projects = () => {
             width={150} 
             height={150} 
             alt={proj.title}
-            className="mb-6 rounded" />
+            className="mb-6 rounded hover:w-full px-2 cursor-pointer" />
             </motion.div>
             <motion.div
             whileInView={{opacity: 1 , x:0}}
