@@ -26,7 +26,8 @@ const About = () => {
         transition={{duration: 3}}
         className="w-full lg:w-1/2 lg:p-8">
           <div className="flex items-center justify-center">
-            <img className="rounded-2xl w-3/5" src={aboutimg3d} alt="" />
+            <img className="rounded-2xl w-3/5 rounded-s-full rounded-r-3xl shadow-2xl bg-gradient-to-r from-pink-300 via-slate-500
+            to-purple-500" src={aboutimg3d} alt="" />
           </div>
         </motion.div>
         <motion.div
