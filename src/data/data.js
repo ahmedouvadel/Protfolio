@@ -1,8 +1,13 @@
-import project1 from "../img/project1.jpg";
+import project1 from "../img/project1.png";
+import project11 from "../img/project11.png";
 import project2 from "../img/dash.png";
 import project3 from "../img/protfolio.png";
 import project4 from "../img/project4.png";
-import project5 from "../img/android.png";
+import VENTA from "../img/VENTA.png";
+import VENTA2 from "../img/VENTA2.png";
+
+
+//import project5 from "../img/android.png";
 
 export const HERO_CONTENT = `I am a dedicated student software engineer with a strong passion for building scalable and efficient applications. My academic background and hands-on experience have equipped me with profound knowledge and skills in a wide array of technologies and libraries, including Angular, Spring Boot, React, React Native, Android, .NET Core, HTML, CSS, Tailwind CSS, Material-UI, and Bootstrap, as well as databases like MySQL and MongoDB.`;
 
@@ -68,18 +73,39 @@ export const PROJECTS = [
     technologies: ["react-native", "springboot", "MySql", "Postman", "Expo"],
   },
   {
-    title: "E-Commerce Web",
+    title: "Market-Place",
+    image: project11,
+    description:
+      "A comprehensive market-place mobile application featuring a dynamic product listing, a shopping cart for seamless purchases, user authentication for secure access, and real-time notifications for orders.",
+    technologies: ["React Native", "Nodejs(express)", "mongodb", "Postman", "Expo"],
+  },
+  {
+    title: "E-Commerce Admin Web",
     image: project2,
     description:
     "A fully functional e-commerce web with features like Add product, Add Categorie , Tracking the Order , and admin, Agent authentication.",
     technologies: ["Material UI", "Bootstrap", "Angular", "Springboot", "MySql", "Postman" ],
   },
   {
+    title: "PlateForm-VENTA",
+    image: VENTA,
+    description:
+    "A fully functional e-commerce-food web with features like Add under admin , accept restaurant , Tracking the Order .. ect",
+    technologies: ["Material UI", "Tailwind css", "Angular", "Springboot","Spring-Security" ,"MySql", "Swagger" ],
+  },
+  {
+    title: "PlateForm-VENTA",
+    image: VENTA2,
+    description:
+    "A fully functional e-commerce-food web with features like Add under admin , accept restaurant , Tracking the Order .. ect",
+    technologies: ["Material UI", "Tailwind css", "Angular", "Springboot","Spring-Security" ,"MySql", "Swagger" ],
+  },
+  {
     title: "Portfolio Website",
     image: project3,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "tailwind css"],
+    technologies: ["HTML", "CSS", "React", "Tailwind css"],
   },
   {
     title: "E-Commerce Website",
@@ -88,13 +114,13 @@ export const PROJECTS = [
     "A fully functional e-commerce website with features like product listing, product details , shopping cart, and user authentication.",
     technologies: ["HTML", "CSS", "Bootstrap", "dotNet Core Mvc", "Swagger", "mySQL"],
   },
-  {
+  /* {
     title: "E-Commerce mobile",
     image: project5,
     description:
     "A fully functional e-commerce website with features like product listing, product details , Add product ,  and user authentication.",
     technologies: ["Java", "Android", "Firebase"],
-  },
+  }, */
 ];
 
 export const CONTACT = {
