@@ -18,7 +18,7 @@ const iconVariants = (duration) => ({
 })
 
 
-const Technologies = () => {
+const Technologies = ({ toggleTheme, isDarkMode }) => {
   return (
     <div className="border-b border-neutral-800 pb-24">
       <motion.h1

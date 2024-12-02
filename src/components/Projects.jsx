@@ -2,7 +2,7 @@ import { PROJECTS } from "../data/data"
 import {  motion } from "framer-motion"
 
 
-const Projects = () => {
+const Projects = ({ toggleTheme, isDarkMode }) => {
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h1
@@ -32,7 +32,7 @@ const Projects = () => {
               <h6 className="mb-2 font-semibold">{proj.title}</h6>
               <p className="mb-4 text-neutral-400">{proj.description}</p>
               {proj.technologies.map((tech, index) => (
-                <span key={index}  className="mr-2 rounded bg-neutral-900 px-2 py-1 font-medium text-purple-900" >{tech}</span>
+                <span key={index}  className="mr-2 rounded dark:bg-neutral-900 dark:text-gray-300  px-2 py-1 font-medium text-purple-900" >{tech}</span>
               ))}
             </motion.div>
           </div>
