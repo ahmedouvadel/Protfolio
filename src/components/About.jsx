@@ -25,7 +25,7 @@ const About = () => {
         initial={{opacity:0, x: -100}}
         transition={{duration: 3}}
         className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex w-full">
+          <div className="flex w-full p-5">
             <img className="rounded-2xl  rounded-s-full rounded-r-3xl shadow-2xl bg-gradient-to-r from-pink-300 via-slate-500
             to-purple-500" src={epi} alt="" />
           </div>
@@ -36,7 +36,7 @@ const About = () => {
         transition={{duration: 2.5}} 
         className="w-full lg:w-1/2">
             <div className="flex justify-center lg:justify-start">
-              <p className="my-2 max-w-xl py-6">{ABOUT_TEXT}</p>
+              <p className="my-2 max-w-xl py-6 lg:text-2xl tracking-tighter min-[400px]:text-xs font-light">{ABOUT_TEXT}</p>
             </div>
           </motion.div>
       </div>
