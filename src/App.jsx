@@ -39,7 +39,7 @@ const App = () => {
       }`}
     >
       {/* Content */}
-      <div className="container mx-auto px-8">
+      <div className="container mx-auto px-8 ">
         <Navbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
         <Avatar />
         <About />
