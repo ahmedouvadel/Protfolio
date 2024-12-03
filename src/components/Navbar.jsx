@@ -15,7 +15,7 @@ const Navbar = ({ toggleTheme, isDarkMode }) => {
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
         <button
           onClick={toggleTheme}
-          className="p-1 rounded-lg text-lg bg-gray-200 dark:bg-neutral-950 text-gray-800 dark:text-gray-300 flex items-center justify-center"
+          className="px-1 rounded-lg text-lg bg-slate-300 font-['Poppins'] dark:bg-neutral-950 text-gray-800 dark:text-gray-300 flex items-center justify-center"
         >
           <span className="hidden md:inline">
             {isDarkMode ? "🌞 Light Mode" : "🌙 Dark Mode"}

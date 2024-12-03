@@ -35,56 +35,56 @@ const Technologies = ({ toggleTheme, isDarkMode }) => {
         variants={iconVariants(2.5)}
         initial="initial" 
         animate="animate"
-        className="rounded-2xl border-4 border-neutral-800 p-4">
+        className="rounded-2xl border-4 dark:border-neutral-800 border-neutral-300 p-4">
           <RiReactjsLine className="text-7xl text-cyan-400" />
         </motion.div>
         <motion.div
         variants={iconVariants(3)}
         initial="initial" 
         animate="animate" 
-        className="rounded-2xl border-4 border-neutral-800 p-4">
+        className="rounded-2xl border-4 dark:dark:border-neutral-800 border-neutral-300 border-neutral-300  p-4">
           <SiAngular className="text-7xl text-red-600" />
         </motion.div>
         <motion.div
         variants={iconVariants(5)}
         initial="initial" 
         animate="animate" 
-        className="rounded-2xl border-4 border-neutral-800 p-4">
+        className="rounded-2xl border-4 dark:border-neutral-800 border-neutral-300 p-4">
           <SiSpring className="text-7xl text-green-600" />
         </motion.div>
         {/* <motion.div
         variants={iconVariants(2)}
         initial="initial" 
         animate="animate" 
-        className="rounded-2xl border-4 border-neutral-800 p-4">
+        className="rounded-2xl border-4 dark:border-neutral-800 border-neutral-300 p-4">
           <FiFigma className="text-7xl text-purple-500" />
         </motion.div> */}
         <motion.div 
         variants={iconVariants(2)}
         initial="initial" 
         animate="animate"
-        className="rounded-2xl border-4 border-neutral-800 p-4">
+        className="rounded-2xl border-4 dark:border-neutral-800 border-neutral-300 p-4">
           <SiDotnet className="text-7xl text-blue-800" />
         </motion.div>
         <motion.div 
         variants={iconVariants(6)}
         initial="initial" 
         animate="animate"
-        className="rounded-2xl border-4 border-neutral-800 p-4">
+        className="rounded-2xl border-4 dark:border-neutral-800 border-neutral-300 p-4">
           <FcAndroidOs className="text-7xl text-green-700" />
         </motion.div>
         <motion.div 
         variants={iconVariants(4)}
         initial="initial" 
         animate="animate"
-        className="rounded-2xl border-4 border-neutral-800 p-4">
+        className="rounded-2xl border-4 dark:border-neutral-800 border-neutral-300 p-4">
           <TbBrandReactNative className="text-7xl text-cyan-400" />
         </motion.div>
         <motion.div 
         variants={iconVariants(5)}
         initial="initial" 
         animate="animate"
-        className="rounded-2xl border-4 border-neutral-800 p-4">
+        className="rounded-2xl border-4 dark:border-neutral-800 border-neutral-300 p-4">
           <SiMysql className="text-7xl text-blue-400" />
         </motion.div>
       </motion.div>

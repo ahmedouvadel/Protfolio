@@ -30,9 +30,9 @@ const Projects = ({ toggleTheme, isDarkMode }) => {
             transition={{duration: 1}}   
             className="w-full max-w-xl lg:w-3/4">
               <h6 className="mb-2 font-semibold">{proj.title}</h6>
-              <p className="mb-4 text-neutral-400">{proj.description}</p>
+              <p className="mb-4 dark:text-neutral-400 text-neutral-600">{proj.description}</p>
               {proj.technologies.map((tech, index) => (
-                <span key={index}  className="mr-2 rounded dark:bg-neutral-900 dark:text-gray-300  px-2 py-1 font-medium text-purple-900" >{tech}</span>
+                <span key={index}  className="mr-2 rounded dark:bg-neutral-900 bg-sky-100  px-2 py-1 font-medium text-purple-900" >{tech}</span>
               ))}
             </motion.div>
           </div>
