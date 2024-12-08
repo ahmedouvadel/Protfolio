@@ -1,6 +1,13 @@
 import { useState } from "react";
 import logo from "../img/vdel.png";
-import { FaLinkedin, FaGithub, FaFacebook, FaInstagram, FaBars, FaTimes } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaFacebook,
+  FaInstagram,
+  FaBars,
+  FaTimes,
+} from "react-icons/fa";
 
 const Navbar = ({ toggleTheme, isDarkMode }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -18,25 +25,43 @@ const Navbar = ({ toggleTheme, isDarkMode }) => {
 
       {/* Navigation Links for Large Screens */}
       <div className="hidden lg:flex gap-6 items-center absolute left-1/2 transform -translate-x-1/2">
-        <a href="#about" className="text-lg font-medium hover:text-cyan-500 transition">
+        <a
+          href="#about"
+          className="text-lg font-medium hover:text-cyan-500 transition"
+        >
           About
         </a>
-        <a href="#technologies" className="text-lg font-medium hover:text-cyan-500 transition">
+        <a
+          href="#technologies"
+          className="text-lg font-medium hover:text-cyan-500 transition"
+        >
           Technologies
         </a>
-        <a href="#projects" className="text-lg font-medium hover:text-cyan-500 transition">
+        <a
+          href="#projects"
+          className="text-lg font-medium hover:text-cyan-500 transition"
+        >
           Projects
         </a>
-        <a href="#experience" className="text-lg font-medium hover:text-cyan-500 transition">
+        <a
+          href="#experience"
+          className="text-lg font-medium hover:text-cyan-500 transition"
+        >
           Experience
         </a>
-        <a href="#contact" className="text-lg font-medium hover:text-cyan-500 transition">
+        <a
+          href="#contact"
+          className="text-lg font-medium hover:text-cyan-500 transition"
+        >
           Contact
         </a>
       </div>
 
       {/* Social Links */}
       <div className="hidden lg:flex gap-4 items-center text-2xl">
+        <button onClick={toggleTheme}>
+          <span>{isDarkMode ? "🌞" : "🌙"}</span>
+        </button>
         <a
           href="https://www.linkedin.com/in/ahmedou-vadel-346bb6231/"
           aria-label="LinkedIn"
@@ -143,7 +168,10 @@ const Navbar = ({ toggleTheme, isDarkMode }) => {
             >
               <FaFacebook />
             </a>
-            <a href="https://www.instagram.com/_te_mo___/" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/_te_mo___/"
+              aria-label="Instagram"
+            >
               <FaInstagram />
             </a>
           </div>
