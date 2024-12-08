@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-scroll"; // Import Link from react-scroll
 import logo from "../img/vdel.png";
 import {
   FaLinkedin,
@@ -26,46 +25,36 @@ const Navbar = ({ toggleTheme, isDarkMode }) => {
 
       {/* Navigation Links for Large Screens */}
       <div className="hidden lg:flex gap-6 items-center absolute left-1/2 transform -translate-x-1/2">
-        <Link
-          to="about"
-          smooth={true}
-          duration={500}
-          className="cursor-pointer text-lg font-medium hover:text-cyan-500 transition"
+        <a
+          href="#about"
+          className="text-lg font-medium hover:text-cyan-500 transition"
         >
           About
-        </Link>
-        <Link
-          to="technologies"
-          smooth={true}
-          duration={500}
-          className="cursor-pointer text-lg font-medium hover:text-cyan-500 transition"
+        </a>
+        <a
+          href="#technologies"
+          className="text-lg font-medium hover:text-cyan-500 transition"
         >
           Technologies
-        </Link>
-        <Link
-          to="projects"
-          smooth={true}
-          duration={500}
-          className="cursor-pointer text-lg font-medium hover:text-cyan-500 transition"
+        </a>
+        <a
+          href="#projects"
+          className="text-lg font-medium hover:text-cyan-500 transition"
         >
           Projects
-        </Link>
-        <Link
-          to="experience"
-          smooth={true}
-          duration={500}
-          className="cursor-pointer text-lg font-medium hover:text-cyan-500 transition"
+        </a>
+        <a
+          href="#experience"
+          className="text-lg font-medium hover:text-cyan-500 transition"
         >
           Experience
-        </Link>
-        <Link
-          to="contact"
-          smooth={true}
-          duration={500}
-          className="cursor-pointer text-lg font-medium hover:text-cyan-500 transition"
+        </a>
+        <a
+          href="#contact"
+          className="text-lg font-medium hover:text-cyan-500 transition"
         >
           Contact
-        </Link>
+        </a>
       </div>
 
       {/* Social Links */}
@@ -117,61 +106,75 @@ const Navbar = ({ toggleTheme, isDarkMode }) => {
           </button>
           <ul className="flex flex-col gap-6 mt-10">
             <li>
-              <Link
-                to="about"
-                smooth={true}
-                duration={500}
-                className="cursor-pointer text-lg font-medium hover:text-cyan-500 transition"
+              <a
+                href="#about"
+                className="text-lg font-medium hover:text-cyan-500 transition"
                 onClick={toggleDrawer} // Close drawer on click
               >
                 About
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="technologies"
-                smooth={true}
-                duration={500}
-                className="cursor-pointer text-lg font-medium hover:text-cyan-500 transition"
+              <a
+                href="#technologies"
+                className="text-lg font-medium hover:text-cyan-500 transition"
                 onClick={toggleDrawer}
               >
                 Technologies
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="projects"
-                smooth={true}
-                duration={500}
-                className="cursor-pointer text-lg font-medium hover:text-cyan-500 transition"
+              <a
+                href="#projects"
+                className="text-lg font-medium hover:text-cyan-500 transition"
                 onClick={toggleDrawer}
               >
                 Projects
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="experience"
-                smooth={true}
-                duration={500}
-                className="cursor-pointer text-lg font-medium hover:text-cyan-500 transition"
+              <a
+                href="#experience"
+                className="text-lg font-medium hover:text-cyan-500 transition"
                 onClick={toggleDrawer}
               >
                 Experience
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="contact"
-                smooth={true}
-                duration={500}
-                className="cursor-pointer text-lg font-medium hover:text-cyan-500 transition"
+              <a
+                href="#contact"
+                className="text-lg font-medium hover:text-cyan-500 transition"
                 onClick={toggleDrawer}
               >
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
+          {/* Social Links */}
+          <div className="mt-10 flex justify-around text-2xl">
+            <a
+              href="https://www.linkedin.com/in/ahmedou-vadel-346bb6231/"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin />
+            </a>
+            <a href="https://github.com/ahmedouvadel" aria-label="GitHub">
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.facebook.com/ahmed.vadel.79/"
+              aria-label="Facebook"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              href="https://www.instagram.com/_te_mo___/"
+              aria-label="Instagram"
+            >
+              <FaInstagram />
+            </a>
+          </div>
         </div>
       )}
     </nav>
